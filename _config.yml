@@ -1,0 +1,10 @@
+name: The Raw Food Institute
+markdown: redcarpet
+pygments: true
+baseurl: ""
+permalink: /:categories/:title/
+url: http://therawfoodinstitute.com
+description:  Advanced raw food nutrition and detoxification programs that educate and train you in the healing effects of raw foods.
+author: Lisa Wilson
+copyright: 2013
+include: ['.htaccess']

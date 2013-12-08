@@ -1,0 +1,8 @@
+<h1 class="entry-title">
+
+{% if post.title %}
+    <h5>{{ post.title }}</h5>
+{% endif %}
+</h1>
+<div class="entry-content">{{ content }}<a href="{{ relative }}{{ post.url }}">Click to leave comments or share...</a> </div>
+

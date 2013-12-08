@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link href="{{ relative }}css/style.css" rel="stylesheet">
+    <link href="{{ relative }}css/bootstrap.css" rel="stylesheet">
+    <link href="{{ relative }}css/bootstrap-responsive.css" rel="stylesheet">   
+    <link href="{{ relative }}css/custom.css" rel="stylesheet">
+    <link href="{{ relative }}css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ relative }}font-awesome/css/font-awesome.min.css">
+
+
+    
+
+   {% include tracking.html %}
+
+  </head>
+
+
+{{ content }}
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="well">
+      <p class="small">Disclaimer: The entire contents of this website are based upon the research and opinions of The Raw Food Institute and Lisa Wilson, unless otherwise noted. The information on this website is not intended to replace a one-on-one relationship with a qualified health care professional nor intended as medical advice. It is intended as a sharing of knowledge and information from the research and experience of our organization. You are encouraged to make your own health care decisions based upon your research and in partnership with a qualified health care professional. These statements have not been evaluated by the Food and Drug Administration, nor are these statements intended to diagnose, treat, cure or prevent any disease.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+     {% include footer.html %}
+<script src="{{ relative }}js/jquery.js"></script>
+<script src="{{ relative }}js/bootstrap.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,6 @@
+﻿#
+#
+RewriteEngine on
+        RewriteCond %{HTTP_HOST} ^www\.therawfoodinstitute\.com$
+        RewriteRule ^/?$ "http\:\/\/therawfoodinstitute\.com\/" [R=301,L]
+#
