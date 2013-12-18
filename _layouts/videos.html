@@ -44,8 +44,8 @@
             <li><a href="{{ relative }}/">Home</a></li>
             <li><a href="{{ relative }}/about.html">About</a></li>
             <li><a href="{{ relative }}/whyraw.html">Raw + Detox</a></li>
-            <li class="active"><a href="{{ relative }}/blog.html">Blog</a></li>
-            <li><a href="{{ relative }}/videos.html">Videos</a></li>
+            <li><a href="{{ relative }}/blog.html">Blog</a></li>
+            <li  class="active"><a href="{{ relative }}/videos.html">Videos</a></li>
             <li><a href="{{ relative }}/shop.html">Shop</a></li>
             <li><a href="{{ relative }}/contact.html">Contact</a></li>
             <li class="dropdown">
@@ -106,13 +106,15 @@
     <div class="col-md-6">
 
   <ul class="posts">
-  <ul class="posts"><blockquote>
-      <p class="lead">Archive</p>
+    <ul class="posts"><blockquote>
+      <p class="lead">Video Archive</p>
     {% for post in site.posts %}
-     {% unless post.categories contains 'videos' %}
+    {% if post.categories contains 'videos' %}
+ 
       <li><a href="{{ relative }}{{ post.url }}">{{ post.title }}</a></li>
-     {% endunless %}
-     {% endfor %}</blockquote>
+
+    {% endif %}
+    {% endfor %}</blockquote>
   </ul>
   </div>
   </div>

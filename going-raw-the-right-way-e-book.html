@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Blog
+title: Going Raw the Right Way
+description: Free ebook showing how to get started with raw food, recipes and equipment.
 ---
 
     <div class="navbar navbar-default navbar-static-top">
@@ -18,8 +19,8 @@ title: Blog
             <li><a href="about.html">About</a></li>
             <li><a href="whyraw.html">Raw + Detox</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li class="active"><a href="videos.html">Videos</a></li>
-              <li><a href="shop.html">Shop</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="shop.html">Shop</a></li>
              <li><a href="contact.html">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<b class="caret"></b></a>
@@ -41,46 +42,24 @@ title: Blog
 
 {% include banner.html %}
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
 
- 
-      <div class="blog-index">  
-    {% for post in site.categories.videos limit:1 %}
-
-
-        {% assign post = site.posts.first %}
-        {% assign content = post.content %}
-        {% include post_detail.html %}
-    
-
-    {% endfor %}
-
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+        <h6>Sign up for our mailing list and receive a free copy of our Ebook.</h6><p class="lead"> This book is a great introduction to raw food. Includes 10 Medicinal Raw Recipes to get you started. We are sure you'll love it!  Happy reading!
       </div>
-<hr>
 
-
-     
-         <div class="headline-box-yellow">
-   
-      {% include immersionad.html %}
-
+      
+<div class="col-sm-3">
+       {% include signupebook.html %}
+     </div>
+        </div>
       </div>
     </div>
-      <div class="col-md-6">
 
-  <ul class="posts"><blockquote>
-      <p class="lead">Video Archive</p>
-    {% for post in site.posts %}
-    {% if post.categories contains 'videos' %}
- 
-      <li><a href="{{ relative }}{{ post.url }}">{{ post.title }}</a></li>
 
-    {% endif %}
-    {% endfor %}</blockquote>
-  </ul>
-  </div>
-  </div>
+
+
+
 </div>
 
