@@ -1355,6 +1355,18 @@ fieldset[disabled] .btn-primary.active {
 
 }
 
+.headline-green {
+  background-color: #7ebe12;
+
+  color: #ffffff;
+
+
+}
+
+.font-green {
+color: #7ebe12;
+}
+
 .headline-box-yellow {
   background-color: #F1C40F;
   color: #ffffff;
