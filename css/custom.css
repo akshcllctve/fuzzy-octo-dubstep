@@ -1582,6 +1582,21 @@ padding-bottom: 20px;
   color: #ffffff;
 }
 
+h1,
+.h1 {
+  font-size: 66px;
+}
+
+h2,
+.h2 {
+  font-size: 36px;
+}
+
+h3,
+.h3 {
+  font-size: 30px;
+}
+
 h4,
 .h4 {
   font-size: 18px;
@@ -1768,6 +1783,9 @@ h6,
   border-color: #459dfe;
 }
 
+.posttitle {
+  font-size: 50px;
+}
 
 
 
