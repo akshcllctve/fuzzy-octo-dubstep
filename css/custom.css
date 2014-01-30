@@ -398,8 +398,8 @@ color: #333;
     margin-bottom: 20px;
     color: #C5DEFA;
     background-repeat: no-repeat;
-
 }
+ 
 
 }
 @media screen and (min-width: 768px) {
@@ -1788,4 +1788,67 @@ h6,
 }
 
 
+@media only screen and (max-width: 767px) {
 
+   h1 {
+      font-size: 25px;
+   }
+
+   h2 {
+      font-size: 18px;
+   }
+
+   h3 {
+    font-size: 15px;
+   }
+
+ body {
+  padding-left: 0px;
+  padding-right: 0px;
+ }
+.navbar {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.btn {
+  display: block;
+}
+
+.img-space {
+padding: 0px;
+   border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-outline {
+  display: block;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+.posttitle {
+  font-size: 25px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+background-color: #000000;
+}
+
+button.btn {
+display: block;
+width: 100%;
+padding-right: 0;
+padding-left: 0;
+
+}
+.btn-shop {
+display: block;
+padding-right: 0;
+padding-left: 0;
+}
+}
