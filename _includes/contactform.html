@@ -1,4 +1,4 @@
-<form role="form" action="https://service.capsulecrm.com/service/newlead" method="post">
+<form novalidate role="form" action="https://service.capsulecrm.com/service/newlead" method="post" id="contactForm">
   <input type="hidden" name="FORM_ID" value="02ff1f1d-d710-4880-9de5-4a5d7143f036">
     <input type="hidden" name="REVIEW_ID" value="147822">
 <input type="hidden" name="COMPLETE_URL" value="http://therawfoodinstitute.com/contactthankyou.html">
@@ -6,15 +6,15 @@
 <input type="hidden" name="TAG" value="Contact">
   <div class="form-group">
     <label for="Email">Email Address</label>
-    <input type="email" name="EMAIL" class="form-control"  placeholder="Email">
+    <input type="email" name="EMAIL" class="form-control required email"  placeholder="Email">
   </div>
   <div class="form-group">
     <label for="FirstName">First Name</label>
-    <input type="text" name="FIRST_NAME" class="form-control"  placeholder="First Name">
+    <input type="text" name="FIRST_NAME" class="form-control required"  placeholder="First Name">
   </div>
    <div class="form-group">
     <label for="LastName">Last Name</label>
-    <input type="text" name="LAST_NAME" class="form-control"  placeholder="Last Name">
+    <input type="text" name="LAST_NAME" class="form-control required"  placeholder="Last Name">
   </div>
   <div class="form-group">
     <label for="LastName">Phone</label>
