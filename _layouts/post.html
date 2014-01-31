@@ -111,6 +111,7 @@
     {% for post in site.posts %}
      {% unless post.categories contains 'videos' %}
       <li><a href="{{ relative }}{{ post.url }}">{{ post.title }}</a></li>
+       <span class="visible-xs"><hr></span>
      {% endunless %}
      {% endfor %}</blockquote>
   </ul>
