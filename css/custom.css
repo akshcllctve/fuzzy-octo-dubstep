@@ -1584,17 +1584,17 @@ padding-bottom: 20px;
 
 h1,
 .h1 {
-  font-size: 66px;
+  font-size: 36px;
 }
 
 h2,
 .h2 {
-  font-size: 36px;
+  font-size: 25px;
 }
 
 h3,
 .h3 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 h4,
@@ -1783,9 +1783,6 @@ h6,
   border-color: #459dfe;
 }
 
-.posttitle {
-  font-size: 50px;
-}
 
 ul.posts {
   margin-left: -35px;
