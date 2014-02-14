@@ -1339,6 +1339,15 @@ fieldset[disabled] .btn-primary.active {
   color: #C5DEFA;
 }
 
+.headline-blue {
+  background-color: #459dfe;
+   margin-top: 20px;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}
+
+
 .headline-red {
   background-color: #bf4a40;
    margin-top: 20px;
@@ -1365,6 +1374,10 @@ fieldset[disabled] .btn-primary.active {
 
 .font-green {
 color: #7ebe12;
+}
+
+.font-blue {
+color: #459dfe;
 }
 
 .headline-box-yellow {
