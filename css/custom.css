@@ -1331,13 +1331,15 @@ fieldset[disabled] .btn-primary.active {
   text-align: center;
 }
 
-.headline {
+.headline-transform {
   background-color: #459dfe;
    margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 
   color: #C5DEFA;
 }
+
+
 
 .headline-blue {
   background-color: #459dfe;
@@ -1347,6 +1349,13 @@ fieldset[disabled] .btn-primary.active {
   color: #ffffff;
 }
 
+.headline-transform {
+  background-color: #459dfe;
+   margin-top: 0px;
+  margin-bottom: 0px;
+
+  color: #ffffff;
+}
 
 .headline-red {
   background-color: #bf4a40;
@@ -1680,8 +1689,8 @@ h6,
 }
 
 .logo {
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   text-align: center;
 }
 
