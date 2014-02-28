@@ -1751,6 +1751,21 @@ h6,
   border-color: #459dfe;
 }
 
+  /* Outline button for use with tags */
+.btn-tags {
+  color: #fff;
+  background-color: #F1C40F;
+  border-color: #F1C40F;
+
+}
+.btn-tags:hover,
+.btn-tags:focus,
+.btn-tags:active {
+ color: #fff;
+  background-color: #F1C40F;
+  border-color: #F1C40F;
+}
+
 /* Inverted shop button (white on dark) */
 .btn-shop-inverse {
   color: #fff;

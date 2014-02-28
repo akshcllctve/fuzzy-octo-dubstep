@@ -48,13 +48,11 @@ description: Raw Food lifestyle tips, techniques and recipes.
 
  
       <div class="blog-index">  
-    {% for post in site.categories.videos limit:1 %}
-
-
-        {% assign post = site.posts.first %}
+    {% for post in site.categories.videos %}
+        {% if post.tags contains 'featured' %}
         {% assign content = post.content %}
         {% include post_detail.html %}
-    
+    {% endif %}
 
     {% endfor %}
 
