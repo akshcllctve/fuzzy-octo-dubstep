@@ -1751,21 +1751,65 @@ h6,
   border-color: #459dfe;
 }
 
-  /* Outline button for use with tags */
-.btn-tags {
+  /* Outline button for use with recipes */
+.btn-recipes {
+  color: #fff;
+  background-color: #e67e22;
+  border-color: #e67e22;
+
+}
+.btn-recipes:hover,
+.btn-recipes:focus,
+.btn-recipes:active {
+ color: #fff;
+  background-color: #e67e22;
+  border-color: #e67e22;
+}
+
+  /* Outline button for use with recipes */
+.btn-how-tos {
+  color: #fff;
+  background-color: #459dfe;
+  border-color: #459dfe;
+
+}
+.btn-how-tos:hover,
+.btn-how-tos:focus,
+.btn-how-tos:active {
+ color: #fff;
+  background-color: #459dfe;
+  border-color: #459dfe;
+}
+
+  /* Outline button for use with recipes */
+.btn-beauty {
+  color: #fff;
+  background-color: #7ebe12;
+  border-color: #7ebe12;
+
+}
+.btn-beauty:hover,
+.btn-beauty:focus,
+.btn-beauty:active {
+ color: #fff;
+  background-color: #7ebe12;
+  border-color: #7ebe12;
+}
+
+  /* Outline button for use with recipes */
+.btn-testimonials {
   color: #fff;
   background-color: #F1C40F;
   border-color: #F1C40F;
 
 }
-.btn-tags:hover,
-.btn-tags:focus,
-.btn-tags:active {
+.btn-testimonials:hover,
+.btn-testimonials:focus,
+.btn-testimonials:active {
  color: #fff;
   background-color: #F1C40F;
   border-color: #F1C40F;
 }
-
 /* Inverted shop button (white on dark) */
 .btn-shop-inverse {
   color: #fff;
@@ -1930,4 +1974,12 @@ span.icon-chart {
 span.icon-exclamation {
   padding-left: 30%;
 }
+}
+.hidden-inline-xs {
+    display: inline !important;
+}
+@media (max-width: 767px) {
+  .hidden-inline-xs {
+    display: none !important;
+  }
 }

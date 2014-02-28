@@ -74,7 +74,21 @@ description: Raw Food lifestyle tips, techniques and recipes.
     {% for post in site.posts %}
     {% if post.categories contains 'videos' %}
  
-      <li><a href="{{ relative }}{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ relative }}{{ post.url }}">{{ post.title }}</a>
+
+        
+        {% if post.tags contains 'recipes' %}
+        <button type="button" class="btn btn-recipes btn-xs hidden-inline-xs" disabled="disabled">recipes</button></li>
+
+        {% elsif post.tags contains 'how-tos' %}<button type="button" class="btn btn-how-tos btn-xs hidden-inline-xs" disabled="disabled">how-tos</button></li>
+
+        {% elsif post.tags contains 'beauty' %}<button type="button" class="btn btn-beauty btn-xs hidden-inline-xs" disabled="disabled">beauty</button></li>
+
+        {% elsif post.tags contains 'testimonial' %}<button type="button" class="btn btn-testimonials btn-xs hidden-inline-xs" disabled="disabled">testimonials</button></li>
+
+        {% endif %}
+
+
 <span class="visible-xs"><hr></span>
     {% endif %}
     {% endfor %}</blockquote>
