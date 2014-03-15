@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Blog
-description: News, techniques and tips for living a raw food lifestyle.
+title: Testimonials
+description: Live Immersion Retreat participants share their testimonials.
 ---
 
     <div class="navbar navbar-default navbar-static-top">
@@ -18,9 +18,9 @@ description: News, techniques and tips for living a raw food lifestyle.
             <li><a href="/">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="whyraw.html">Raw + Detox</a></li>
-            <li class="active"><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="videos.html">Videos</a></li>
-            <li><a href="shop.html">Shop</a></li>
+              <li><a href="shop.html">Shop</a></li>
              <li><a href="contact.html">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<b class="caret"></b></a>
@@ -45,18 +45,16 @@ description: News, techniques and tips for living a raw food lifestyle.
 <div class="container">
   <div class="row">
     <div class="col-md-6">
-
+<h1>Hear from real people who've attended our Live Immersion Retreat.</h1>
  
       <div class="blog-index">  
-      {% for post in site.categories.articles limit:1 %}
-    
-        {% assign post = site.posts.first %}
+    {% for post in site.categories.testimonials %}
+        {% if post.tags contains 'featured' %}
         {% assign content = post.content %}
         {% include post_detail.html %}
-    
-        {% endfor %}
+    {% endif %}
 
-
+    {% endfor %}
 
       </div>
 <hr>
@@ -66,19 +64,19 @@ description: News, techniques and tips for living a raw food lifestyle.
          <div class="headline-box-yellow">
    
       {% include immersionad.html %}
+
       </div>
     </div>
       <div class="col-md-6">
 
   <ul class="posts"><blockquote>
-    
-      <p class="lead">Archive</p>
-
+      <p class="lead">Testimonials</p>
     {% for post in site.posts %}
-     {% unless (post.categories contains 'testimonials' or post.categories contains 'videos' or post.tags contains 'suppress' %}
-      <li><a href="{{ relative }}{{ post.url }}">{{ post.title }} </a>
+    {% if post.categories contains 'testimonials' %}
+ 
+      <li><a href="{{ relative }}{{ post.url }}">{{ post.title }}</a>
 
-
+        
         {% if post.tags contains 'recipes' %}
         <button type="button" class="btn btn-recipes btn-xs hidden-inline-xs" disabled="disabled">recipes</button></li>
 
@@ -90,11 +88,10 @@ description: News, techniques and tips for living a raw food lifestyle.
 
         {% endif %}
 
-        
- 
-      <span class="visible-xs"><hr></span>
-     {% endunless %}
-     {% endfor %}</blockquote>
+
+<span class="visible-xs"><hr></span>
+    {% endif %}
+    {% endfor %}</blockquote>
   </ul>
   </div>
   </div>
