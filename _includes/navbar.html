@@ -1,0 +1,42 @@
+<div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li  class="{% if page.url == '/index.html' %}active{% endif %}"><a href="{{ site.baseurl }}/">Home</a></li>
+            <li  class="{% if page.url == '/about.html' %}active{% endif %}" ><a href="{{ site.baseurl }}/about.html">About</a></li>
+            <li   class="{% if page.url == '/whyraw.html' %}active{% endif %}"><a href="{{ site.baseurl }}/whyraw.html">Why Raw?</a></li>
+            <li   class="{% unless (page.categories contains 'videos' or page.categories contains 'programs' or page.categories == nil)  %}active{% endunless %}"><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
+            <li   class="{% if page.categories contains 'videos' %}active{% endif %}"><a href="{{ site.baseurl }}/videos.html">Videos</a></li>
+            <li   class="{% if page.url == '/shop.html' %}active{% endif %}"><a href="{{ site.baseurl }}/shop.html">Shop</a></li>
+            <li   class="{% if page.url == '/contact.html' %}active{% endif %}"><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle {% if page.categories contains 'programs' %}active{% endif %}" data-toggle="dropdown" >Programs<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+               
+                <li><a href="{{ site.baseurl }}/immersion.html">Live Immersion Retreat</a></li>
+                <li><a href="{{ site.baseurl }}/distancelearning.html">Distance Learning Program</a></li>
+                <li><a href="{{ site.baseurl }}/rawfoodeducator.html">Raw Food Educator Program</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          
+
+     <div class="navbar-right">
+    <a href="http://facebook.com/therawfoodinstitute" target="_blank"><i class="fa fa-facebook-square fa-3x" alt ="visit us on facebook"></i></a>
+    <a href="http://twitter.com/rawfoodinst" target="_blank"><i class="fa fa-twitter-square fa-3x" alt="visit us on twitter"></i></a>
+    <a href="http://therawfoodinstitute.com/feed.xml" target="_blank" alt="subscribe via rss"><i class="fa fa-rss-square fa-3x"></i>
+    <a href="http://www.pinterest.com/rawfoodinst" target="_blank" alt="visit us on pinterest"><i class="fa fa-pinterest-square fa-3x"></i></a>
+</div>
+
+        </div>
+      </div>
+    </div>

@@ -42,11 +42,7 @@ color: #333;
 
 }
 
-/* Keep code small in tables on account of limited space */
-.table code {
-  font-size: 13px;
-  font-weight: normal;
-}
+
 
 /* Outline button for use within the docs */
 .btn-outline {
@@ -1395,9 +1391,22 @@ color: #459dfe;
   padding: 20px;
 
 }
+.headline-box-blue {
+  background-color: #459dfe;
+  color: #ffffff;
+  padding: 20px;
+
+}
 
 .headline-box-carrot {
   background-color: #e67e22;
+  color: #ffffff;
+  padding: 20px;
+
+}
+
+.headline-box-green {
+  background-color: #7ebe12;
   color: #ffffff;
   padding: 20px;
 
@@ -1569,6 +1578,15 @@ text-align: center;
 .yellow {
   background-color: #F1C40F;
 }
+
+.green {
+  background-color: #7ebe12;
+}
+
+.carrot {
+  background-color: #e67e22;
+}
+
 
 .image-wide {
   position: relative;
@@ -1920,6 +1938,7 @@ h5 {
 .navbar-default .navbar-toggle .icon-bar {
 background-color: #000000;
 }
+
 
 button.btn {
 display: block;
