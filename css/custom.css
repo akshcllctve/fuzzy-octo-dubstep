@@ -1700,6 +1700,7 @@ h6,
   }
 }
 
+
 .container > .navbar-header,
 .container > .navbar-collapse {
   margin-right: 0px;
@@ -2017,3 +2018,135 @@ span.icon-exclamation {
   filter: alpha(opacity=50);
 }
 
+.four {
+background-color: #f8f8f8;
+}
+
+
+.navbar-default {
+background-color: #f8f8f8;
+border-color: #f8f8f8;
+}
+
+
+
+  .btn-four {
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  }
+
+
+  /* Outline button for use within the docs */
+.btn-four {
+  color: #F1C40F;
+  font-size: 45px;
+  background-color: #f8f8f8;
+  border-color: #F1C40F;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+.btn-four:hover,
+.btn-four:focus,
+.btn-four:active {
+  color: #fff;
+  background-color: #459dfe;
+  border-color: #459dfe;
+}
+
+.btn-four-outline {
+  color: #563d7c;
+  background-color: #fff;
+  border-color: #e5e5e5;
+  margin-left: 60px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+.btn-four-outline:hover,
+.btn-four-outline:focus,
+.btn-four-outline:active {
+  color: #fff;
+  background-color: #459dfe;
+  border-color: #459dfe;
+}
+
+/* Inverted four-outline button (white on dark) */
+.btn-four-outline-inverse {
+  color: #fff;
+  background-color: transparent;
+  border-color: #cdbfe3;
+}
+.btn-four-outline-inverse:hover,
+.btn-four-outline-inverse:focus,
+.btn-four-outline-inverse:active {
+  color: #563d7c;
+  text-shadow: none;
+  background-color: #fff;
+  border-color: #fff;
+}
+.btn-four-yellow {
+  color: #F1C40F;
+  font-size: 45px;
+  background-color: #f8f8f8;
+  border-color: #F1C40F;
+}
+.btn-four-yellow:hover,
+.btn-four-yellow:focus,
+.btn-four-yellow:active {
+  color: #fff;
+  background-color: #F1C40F;
+  border-color: #F1C40F;
+}
+
+.btn-four-carrot {
+    color: #e67e22;
+  font-size: 45px;
+  background-color: #f8f8f8;
+  border-color: #e67e22;
+}
+.btn-four-carrot:hover,
+.btn-four-carrot:focus,
+.btn-four-carrot:active {
+  color: #fff;
+  background-color: #e67e22;
+  border-color: #e67e22;
+}
+.btn-four-green {
+    color: #7ebe12;
+  font-size: 45px;
+  background-color: #f8f8f8;
+  border-color: #7ebe12;
+}
+.btn-four-green:hover,
+.btn-four-green:focus,
+.btn-four-green:active {
+  color: #fff;
+  background-color: #7ebe12;
+  border-color: #7ebe12;
+}
+.btn-four-blue {
+    color: #459dfe;
+  font-size: 45px;
+  background-color: #f8f8f8;
+  border-color: #459dfe;
+}
+.btn-four-blue:hover,
+.btn-four-blue:focus,
+.btn-four-blue:active {
+  color: #fff;
+  background-color: #459dfe;
+  border-color: #459dfe;
+}
+.fourlogo {
+      margin-top: 0px;
+  text-align: center;
+}

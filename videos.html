@@ -25,17 +25,16 @@ categories: videos
       </div>
 <hr>
 
-    {% include responsivesignup.html %}
-     
-         <div class="headline-box-yellow">
-   
-      {% include immersionad.html %}
-
-      </div>
+  
     </div>
       <div class="col-md-6">
 
   <ul class="posts"><blockquote>
+      <div class="headline-box-yellow">
+   
+      {% include immersionad.html %}
+    </div>
+         {% include responsivesignup.html %}<br>
       <p class="lead">Video Archive</p>
     {% for post in site.posts %}
     {% if post.categories contains 'videos' %}
@@ -49,6 +48,8 @@ categories: videos
         {% elsif post.tags contains 'how-tos' %}<button type="button" class="btn btn-how-tos btn-xs hidden-inline-xs" disabled="disabled">how-tos</button></li>
 
         {% elsif post.tags contains 'beauty' %}<button type="button" class="btn btn-beauty btn-xs hidden-inline-xs" disabled="disabled">beauty</button></li>
+
+        {% elsif post.tags contains '2 minute health tip' %}<button type="button" class="btn btn-beauty btn-xs hidden-inline-xs" disabled="disabled">2-Minute Health Tip</button></li>
 
         {% elsif post.tags contains 'testimonial' %}<button type="button" class="btn btn-testimonials btn-xs hidden-inline-xs" disabled="disabled">testimonials</button></li>
 
