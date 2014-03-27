@@ -59,9 +59,10 @@
  {{ content }}
 
 <hr>
-
- {% include disqus.html %}
-        
+<div id="shareandcomment">
+{% include addthis.html %}
+{% include disqus.html %}
+</div>
 
     </div>
 
@@ -122,7 +123,6 @@
 
 <script src="{{ relative }}/js/jquery.js"></script>
 <script src="{{ relative }}/js/bootstrap.js"></script>
-
 
     </body>
 </html>

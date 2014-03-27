@@ -21,7 +21,7 @@ categories: videos
     {% endif %}
 
     {% endfor %}
-
+  {% include events.html %}
       </div>
 <hr>
 
@@ -34,7 +34,8 @@ categories: videos
    
       {% include immersionad.html %}
     </div>
-         {% include responsivesignup.html %}<br>
+         {% include responsivesignup.html %}
+                 
       <p class="lead">Video Archive</p>
     {% for post in site.posts %}
     {% if post.categories contains 'videos' %}
