@@ -17,7 +17,7 @@ categories: videos
     {% for post in site.categories.videos %}
         {% if post.tags contains 'featured' %}
         {% assign content = post.content %}
-        {% include post_detail.html %}
+         {% include post_detail.html %}
     {% endif %}
 
     {% endfor %}
