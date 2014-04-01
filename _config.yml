@@ -6,5 +6,5 @@ permalink: /:categories/:title/
 url: http://therawfoodinstitute.com
 description:  Advanced raw food nutrition and detoxification programs that educate and train you in the healing effects of raw foods.
 author: Lisa Wilson
-copyright: 2013
+copyright: 2014
 include: ['.htaccess']

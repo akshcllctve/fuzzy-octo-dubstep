@@ -60,20 +60,25 @@
 
 <hr>
 
- {% include disqus.html %}
-    
+ {% include addthis.html %}
+<div id="shareandcomment">
+{% include disqus.html %}
+    </div>
+     
+  {% include responsivesignup.html %}
+    </div>
+      <div class="col-md-6">
+
+  <ul class="posts"><blockquote>
      <div class="headline-box-yellow">
    
       {% include immersionad.html %}
-
-      </div>
-
     </div>
-
     <div class="col-md-6">
 
   <ul class="posts">
     <ul class="posts"><blockquote>
+      
       <p class="lead">Testimonials</p>
     {% for post in site.posts %}
     {% if post.categories contains 'testimonials' %}

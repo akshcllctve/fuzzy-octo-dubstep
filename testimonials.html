@@ -26,15 +26,16 @@ description: Live Immersion Retreat participants share their testimonials.
 
 
      
-         <div class="headline-box-yellow">
-   
-      {% include immersionad.html %}
-
-      </div>
+          {% include responsivesignup.html %}
     </div>
       <div class="col-md-6">
 
   <ul class="posts"><blockquote>
+     <div class="headline-box-yellow">
+   
+      {% include immersionad.html %}
+    </div>
+    
       <p class="lead">Testimonials</p>
     {% for post in site.posts %}
     {% if post.categories contains 'testimonials' %}
