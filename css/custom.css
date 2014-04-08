@@ -1770,6 +1770,8 @@ h6,
   border-color: #459dfe;
 }
 
+
+
   /* Outline button for use with recipes */
 .btn-recipes {
   color: #fff;
@@ -1864,6 +1866,13 @@ h6,
 }
 }
 
+.btn-blue {
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
 
 .btn-blue {
   color: #fff;
@@ -1879,9 +1888,10 @@ h6,
 .btn-blue:focus,
 .btn-blue:active {
   color: #fff;
-  background-color: #459dfe;
-  border-color: #459dfe;
+  background-color: #F1C40F;
+  border-color: #F1C40F;
 }
+
 
 
 ul.posts {
