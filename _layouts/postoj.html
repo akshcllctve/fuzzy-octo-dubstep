@@ -31,7 +31,7 @@
   </head>
   <body>
  {% include navbar.html %}
- 
+
      <div class="live-headline visible-lg" style="background-image: url({{ relative }}/img/tableb.jpg)">
       <img class="logo" src="{{ relative }}/img/RFILLS.jpg">
       
@@ -57,32 +57,31 @@
  <h1 class="posttitle">{{ page.title }}</h1>
 
  {{ content }}
-{% include printfriendly.html %}
+ {% include printfriendly.html %}
 <hr>
 {% include addthis.html %}
 <div id="shareandcomment">
- {% include disqus.html %}
-  </div>
+{% include disqus.html %}
+</div>
 
     </div>
 
     <div class="col-md-6">
 
   <ul class="posts">
-    <ul class="posts"><blockquote>
-        <div class="headline-box-yellow">
+  <ul class="posts"><blockquote>
+    <div class="headline-box-yellow">
    
       {% include immersionad.html %}
     </div>
          {% include responsivesignup.html %}<br>
 
-      <p class="lead">Video Archive</p>
+      <p class="lead">Archive</p>
     {% for post in site.posts %}
-    {% if post.categories contains 'videos' %}
- 
+    {% unless (post.categories contains 'testimonials' or post.categories contains 'videos' or post.tags contains 'suppress') %}
       <li><a href="{{ relative }}{{ post.url }}">{{ post.title }}</a>
-
-        {% if post.tags contains 'recipes' %}
+        
+       {% if post.tags contains 'recipes' %}
         <button type="button" class="btn btn-recipes btn-xs hidden-inline-xs" disabled="disabled">recipes</button></li>
 
         {% elsif post.tags contains 'how-tos' %}<button type="button" class="btn btn-how-tos btn-xs hidden-inline-xs" disabled="disabled">how-tos</button></li>
@@ -95,13 +94,13 @@
 
         {% endif %}
 
+       <span class="visible-xs"><hr></span>
+     {% endunless %}
+     {% endfor %}
 
-<span class="visible-xs"><hr></span>
-    {% endif %}
-    {% endfor %}
-
-  <br><hr>
+   <br><hr>
 {% include ebooksignup.html %}
+
 </blockquote>
   </ul>
   </div>
@@ -121,7 +120,7 @@
 </div>
 <hr>
       {% include footer.html %}
-{% include perfectaudience.html %}
+
 <script src="{{ relative }}/js/jquery.js"></script>
 <script src="{{ relative }}/js/bootstrap.js"></script>
 
