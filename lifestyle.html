@@ -1,0 +1,68 @@
+---
+layout: default
+title: Lifestyle
+description: Raw Food lifestyle tips, techniques and recipes.
+categories: videos
+---
+
+
+{% include banner.html %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+ 
+      <div class="blog-index">  
+    {% for post in site.categories.videos limit:1 %}
+        {% assign content = post.content %}
+         {% include post_detail.html %}
+
+    {% endfor %}
+  {% include events.html %}
+      </div>
+<hr>
+
+  
+    </div>
+      <div class="col-md-6">
+
+  <ul class="posts"><blockquote>
+
+   
+      {% include immersionad.html %}
+  
+         {% include responsivesignup.html %}
+                 
+      <p class="lead">Lifestyle Archive</p>
+    {% for post in site.posts %}
+    {% if post.layout contains 'lifestyle' %}
+ 
+      <li><a href="{{ relative }}{{ post.url }}">{{ post.title }}</a>
+
+        
+
+        {% if post.tags contains 'how-tos' %}<button type="button" class="btn btn-how-tos btn-xs hidden-inline-xs" disabled="disabled">how-tos</button></li>
+
+        {% elsif post.tags contains 'beauty' %}<button type="button" class="btn btn-beauty btn-xs hidden-inline-xs" disabled="disabled">beauty</button></li>
+
+        {% elsif post.tags contains '2 minute health tip' %}<button type="button" class="btn btn-beauty btn-xs hidden-inline-xs" disabled="disabled">2-Minute Health Tip</button></li>
+
+        {% elsif post.tags contains 'testimonial' %}<button type="button" class="btn btn-testimonials btn-xs hidden-inline-xs" disabled="disabled">testimonials</button></li>
+
+        {% endif %}
+
+
+<span class="visible-xs"><hr></span>
+    {% endif %}
+    {% endfor %}
+<br><hr>
+{% include ebooksignup.html %}
+
+
+  </blockquote>
+  </ul>
+  </div>
+  </div>
+</div>
+

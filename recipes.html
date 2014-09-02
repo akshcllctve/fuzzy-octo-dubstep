@@ -1,0 +1,57 @@
+---
+layout: default
+title: Recipes
+description: Raw Food recipes for salads, soups, nut mylks and more!
+categories: articles
+---
+
+
+{% include banner.html %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+ 
+      <div class="blog-index">  
+    {% for post in site.categories.articles limit:1 %}
+        {% assign content = post.content %}
+         {% include post_detail.html %}
+
+    {% endfor %}
+  {% include events.html %}
+      </div>
+<hr>
+
+  
+    </div>
+      <div class="col-md-6">
+
+  <ul class="posts"><blockquote>
+
+   
+      {% include immersionad.html %}
+  
+         {% include responsivesignup.html %}
+                 
+      <p class="lead">Recipe Archive</p>
+    {% for post in site.posts %}
+    {% if post.layout contains 'recipes' %}
+ 
+      <li><a href="{{ relative }}{{ post.url }}">{{ post.title }}</a><button type="button" class="btn btn-how-tos btn-xs hidden-inline-xs" disabled="disabled">recipes</button></li>
+
+
+
+<span class="visible-xs"><hr></span>
+    {% endif %}
+    {% endfor %}
+<br><hr>
+{% include ebooksignup.html %}
+
+
+  </blockquote>
+  </ul>
+  </div>
+  </div>
+</div>
+

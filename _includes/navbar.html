@@ -13,8 +13,8 @@
             <li  class="{% if page.url == '/index.html' %}active{% endif %}"><a href="{{ site.baseurl }}/">Home</a></li>
             <li  class="{% if page.url == '/about.html' %}active{% endif %}" ><a href="{{ site.baseurl }}/about.html">About</a></li>
             <li   class="{% if page.url == '/whyraw.html' %}active{% endif %}"><a href="{{ site.baseurl }}/whyraw.html">Why Raw?</a></li>
-            <li   class="{% unless (page.categories contains 'videos' or page.categories contains 'programs' or page.categories == nil)  %}active{% endunless %}"><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
-            <li   class="{% if page.categories contains 'videos' %}active{% endif %}"><a href="{{ site.baseurl }}/videos.html">Videos</a></li>
+            <li   class="{% if page.layout contains 'recipes' or page.title contains 'Recipes' %}active{% endif %}"><a href="{{ site.baseurl }}/recipes.html">Recipes</a></li>
+            <li   class="{% if page.layout contains 'lifestyle' or page.title contains 'Lifestyle' %}active{% endif %}"><a href="{{ site.baseurl }}/lifestyle.html">Lifestyle</a></li>
             <li   class="{% if page.url == '/shop.html' %}active{% endif %}"><a href="{{ site.baseurl }}/shop.html">Shop</a></li>
             <li   class="{% if page.url == '/contact.html' %}active{% endif %}"><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
             <li class="dropdown  {% if page.categories contains 'programs' %}active{% endif %}">
