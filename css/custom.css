@@ -1760,7 +1760,12 @@ h6,
   .img-about {
     margin: 20px;
   }
-.btn-danger {
+
+
+.btn-danger-2 {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
     margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
@@ -1770,8 +1775,41 @@ h6,
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 60px
+}
 
+.btn-danger-2:hover,
+.btn-danger-2:focus,
+.btn-danger-2:active,
+.btn-danger-2.active,
+.open .dropdown-toggle.btn-danger-2 {
+  color: #ffffff;
+  background-color: #d2322d;
+  border-color: #ac2925;
+}
 
+.btn-danger-2:active,
+.btn-danger-2.active,
+.open .dropdown-toggle.btn-danger-2 {
+  background-image: none;
+}
+
+.btn-danger-2.disabled,
+.btn-danger-2[disabled],
+fieldset[disabled] .btn-danger-2,
+.btn-danger-2.disabled:hover,
+.btn-danger-2[disabled]:hover,
+fieldset[disabled] .btn-danger-2:hover,
+.btn-danger-2.disabled:focus,
+.btn-danger-2[disabled]:focus,
+fieldset[disabled] .btn-danger-2:focus,
+.btn-danger-2.disabled:active,
+.btn-danger-2[disabled]:active,
+fieldset[disabled] .btn-danger-2:active,
+.btn-danger-2.disabled.active,
+.btn-danger-2[disabled].active,
+fieldset[disabled] .btn-danger-2.active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
 }
 .giant {
   font-size: 40px;
