@@ -1,0 +1,67 @@
+---
+layout: default
+title: Certified Raw Food Educators
+description: The Raw Food Institute's Certified Raw Food Educators.
+category: crfe
+---
+
+
+{% include banner.html %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+ 
+      <div class="blog-index">  
+    {% for post in site.categories.crfe limit:1 %}
+        {% assign content = post.content %}
+         {% include post_detail.html %}
+
+    {% endfor %}
+
+      </div>
+<hr>
+
+  
+    </div>
+      <div class="col-md-6">
+
+  <ul class="posts"><blockquote>
+
+   
+      {% include immersionad.html %}
+  
+         <img src=""
+                 
+      <p class="lead">Certified Raw Food Educators</p>
+    {% for post in site.posts %}
+    {% if post.layout contains 'crfe' %}
+ 
+      <li><a href="{{ relative }}{{ post.url }}">{{ post.title }}</a>
+
+        
+
+
+<span class="visible-xs"><hr></span>
+    {% endif %}
+    {% endfor %}
+<br><hr>
+
+
+
+  </blockquote>
+  </ul>
+  </div>
+  </div>
+</div>
+
+
+
+
+{% include banner.html %}
+   
+
+
+
+
