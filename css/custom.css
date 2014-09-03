@@ -1760,7 +1760,22 @@ h6,
   .img-about {
     margin: 20px;
   }
+.btn-danger {
+    margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+    padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 60px
 
+
+}
+.giant {
+  font-size: 40px;
+}
   .btn-shop {
 
   margin-left: 20px;
