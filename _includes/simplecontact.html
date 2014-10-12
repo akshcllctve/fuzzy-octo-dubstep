@@ -1,0 +1,11 @@
+<form action="http://getsimpleform.com/messages?form_api_token={{ page.apitoken }}" method="post">
+        <input type='hidden' name="message" value="Someone has sent you a message from your profile on The Raw Food Institute!"></textarea>
+
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <input type='hidden' name='redirect_to' value='http://therawfoodinstitute.com/coachcontactthankyou.html' />
+  <!-- all your input fields here.... -->
+  <input class="form-control required email"  placeholder="Your email" type='email' name='email' />
+    <textarea class="form-control" rows="1" name="name" placeholder="Your name"></textarea>
+  <textarea class="form-control" rows="3" name="message" placeholder="Message"></textarea>
+    <button type="submit" class="btn btn-danger btn-block">Submit</button>
+</form>
