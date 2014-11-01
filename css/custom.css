@@ -1431,6 +1431,12 @@ color: #459dfe;
 
 }
 
+.headline-box-grey {
+  background-color: #777777;
+  color: #ffffff;
+  padding: 20px;
+
+}
 .headline-carrot {
   background-color: #e67e22;
 
